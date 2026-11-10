@@ -37,12 +37,12 @@ cp "$ROOT/dist/mac/READ ME FIRST.txt" "$ROOT/dist/THIRD-PARTY-NOTICES.txt" "$STA
 
 ZIP="$ROOT/dist/LoopsMaster-$VERSION-Mac.zip"
 rm -f "$ZIP"
-ditto -c -k --keepParent "$STAGE" "$ZIP"
+ditto -c -k --norsrc --noextattr --keepParent "$STAGE" "$ZIP"
 
 if [ -n "${SIGN_ID:-}" ] && [ -n "${NOTARY_PROFILE:-}" ]; then
     xcrun notarytool submit "$ZIP" --keychain-profile "$NOTARY_PROFILE" --wait
     xcrun stapler staple "$STAGE/LoopsMaster.vst3"
-    rm -f "$ZIP"; ditto -c -k --keepParent "$STAGE" "$ZIP"
+    rm -f "$ZIP"; ditto -c -k --norsrc --noextattr --keepParent "$STAGE" "$ZIP"
 fi
 rm -rf "$ROOT/dist/stage-mac"
 echo "Made $ZIP"

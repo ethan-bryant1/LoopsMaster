@@ -58,7 +58,7 @@ jobs:
           $stage = "dist\stage-win\LoopsMaster $v Windows"
           New-Item -ItemType Directory -Force $stage | Out-Null
           Copy-Item build\VST3\Release\LoopsMaster.vst3 $stage -Recurse
-          Remove-Item "$stage\LoopsMaster.vst3\desktop.ini","$stage\LoopsMaster.vst3\PlugIn.ico" -ErrorAction SilentlyContinue
+          Remove-Item "$stage\LoopsMaster.vst3\desktop.ini","$stage\LoopsMaster.vst3\PlugIn.ico" -Force -ErrorAction SilentlyContinue
           Copy-Item "dist\windows\READ ME FIRST.txt","dist\THIRD-PARTY-NOTICES.txt" $stage
           Compress-Archive -Path $stage -DestinationPath "dist\LoopsMaster-$v-Windows.zip" -Force
       - uses: actions/upload-artifact@v4
