@@ -1,4 +1,4 @@
-# Builds the Windows and Mac zips on GitHub's machines. Run it from the Actions tab
+﻿# Builds the Windows and Mac zips on GitHub's machines. Run it from the Actions tab
 # ("Run workflow"); the zips appear under the run as "LoopsMaster-Windows" and "LoopsMaster-Mac".
 # For signed Mac builds add these repository secrets: MAC_CERT_P12 (base64 of a Developer ID
 # Application .p12), MAC_CERT_PASSWORD, MAC_SIGN_ID, APPLE_ID, APPLE_TEAM_ID, APPLE_APP_PASSWORD.
@@ -8,7 +8,7 @@ on:
 
 jobs:
   mac:
-    runs-on: macos-14
+    runs-on: macos-latest
     env:
       HAS_CERT: ${{ secrets.MAC_CERT_P12 != '' }}
     steps:
