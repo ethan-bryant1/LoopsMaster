@@ -1,0 +1,26 @@
+Loops Master 1.7.0 for Windows
+All-in-one mastering for riddim: layers, EQ, multiband, duck, clip, limit and meters.
+
+Requirements
+  Windows 10 or 11, 64-bit
+  Ableton Live 10.1 or newer (Live 11 or 12 recommended)
+
+Install
+  1. Close Live.
+  2. Copy the folder "LoopsMaster.vst3" into:
+       C:\Program Files\Common Files\VST3
+     Windows asks for administrator permission; click Continue.
+  3. Open Live. In Settings > Plug-Ins, turn on "Use VST3 Plug-In System Folders",
+     then click Rescan.
+  4. Loops Master is in the browser under Plug-Ins > VST3 > Loops.
+
+Uninstall
+  Delete C:\Program Files\Common Files\VST3\LoopsMaster.vst3
+
+Using it on the master
+  Put Loops Master last on the master track.
+  Keep the mix peaking around 0 dB or lower before it; the meters show the input level.
+  The Duck section listens to the sidechain input. Send it your kick only, not the whole mix.
+
+Copyright (c) 2026 Loops. All rights reserved.
+VST is a registered trademark of Steinberg Media Technologies GmbH.

@@ -1,0 +1,13 @@
+# Build output
+build/
+build-mac/
+dist/*.zip
+dist/stage-*/
+
+# The VST 3 SDK is fetched by the build (tag v3.8.1_build_84), not stored here.
+external/vst3sdk/
+
+# Research notes stay on this computer.
+docs/
+
+.DS_Store

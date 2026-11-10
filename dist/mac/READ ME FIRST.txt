@@ -1,0 +1,26 @@
+Loops Master for Mac
+All-in-one mastering for riddim: layers, EQ, multiband, duck, clip, limit and meters.
+
+Requirements
+  macOS 10.13 or newer, Apple silicon or Intel
+  Ableton Live 10.1 or newer (Live 11 or 12 recommended)
+
+Install
+  1. Close Live.
+  2. In Finder, choose Go > Go to Folder and enter:
+       /Library/Audio/Plug-Ins/VST3
+  3. Drag "LoopsMaster.vst3" into that folder. Enter your Mac password if asked.
+  4. Open Live. In Settings > Plug-Ins, turn on "Use VST3 Plug-In System Folders",
+     then click Rescan.
+  5. Loops Master is in the browser under Plug-Ins > VST3 > Loops.
+
+Uninstall
+  Delete /Library/Audio/Plug-Ins/VST3/LoopsMaster.vst3
+
+Using it on the master
+  Put Loops Master last on the master track.
+  Keep the mix peaking around 0 dB or lower before it; the meters show the input level.
+  The Duck section listens to the sidechain input. Send it your kick only, not the whole mix.
+
+Copyright (c) 2026 Loops. All rights reserved.
+VST is a registered trademark of Steinberg Media Technologies GmbH.
